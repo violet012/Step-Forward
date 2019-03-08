@@ -164,7 +164,7 @@ button {
 #showcase{
     background-size: cover;
     position: relative; 
-    height: 130%; /* can you make the height of the page relative to the stuff you put in?*/
+    height: auto; /* can you make the height of the page relative to the stuff you put in?*/
 }
 
 #showcaseTitle{
@@ -181,12 +181,17 @@ button {
 
 }
 .column{
-    padding-right: 10px;
-    padding-left: 10px;
+    /*padding-right: auto;
+    padding-left: auto;*/
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-
+    text-align: justify;
+    width: 200px
+}
+.column img {
+    display: block;
+    margin: 0 auto;
 }
 .row{
     margin-left: auto;
@@ -215,33 +220,33 @@ button {
 
 <!---Jessie's main edit-->
 <div class="container-fluid" id = "showcase"> <!---HOW TO MAKE PIC THE SAME SIZE (if they not the same size-->
-    <h1 class="text-center" id="showcaseTitle">Showcase</h1>
+    <h1 class="text-center" id="showcaseTitle">Our Volunteers</h1>
     <div id="showcaseImage" class="row">
         <div class="column">
-            <img src="assets/showcase/pic1.jpg">
-            <p>A yellow bird, some description of this picture lalalalalala<!--NEED To make it go underneath the pic and stay there--></p>
+            <img src="assets/showcase/pic1.jpg" style="width: 200px; height: 200px;">
+            <p>some other description of this picture lalalalalala</p>
         </div>
         <div class="column">
-            <img src="assets/showcase/pic1.jpg">
+            <img src="assets/showcase/pic2.jpg" style="width: 200px; height: 200px;">
             <p>Some other description of this picture lalalalalala</p>
         </div>
 
         <div class="column">
-            <img src="assets/showcase/pic1.jpg">
+            <img src="assets/showcase/pic1.jpg" style="width: 200px; height: 200px;">
             <p>Some other description of this picture lalalalalala</p>
         </div>
 
         <div class="column">
-            <img src="assets/showcase/pic1.jpg">
+            <img src="assets/showcase/pic1.jpg" style="width: 200px; height: 200px;">
             <p>Some other description of this picture lalalalalala</p>
         </div>
 
         <div class="column">
-            <img src="assets/showcase/pic1.jpg">
+            <img src="assets/showcase/pic1.jpg" style="width: 200px; height: 200px;">
             <p>Some other description of this picture lalalalalala</p>
         </div>
         <div class="column">
-            <img src="assets/showcase/pic1.jpg">
+            <img src="assets/showcase/pic1.jpg" style="width: 200px; height: 200px;">
             <p>Some other description of this picture lalalalalala</p>
         </div>
     
@@ -250,8 +255,8 @@ button {
 </div>
 
 
-
 <!--End of Jessie's edit-->
+
 
 <!-- ABOUT THE CLUB -->
 
