@@ -258,20 +258,36 @@ button {
 <!--End of Jessie's edit-->
 
 
-<!-- ABOUT US -->
-<center><h1>ABOUT US<h6/><center/>
+<!-- ABOUT THE CLUB -->
 
-<div id="ipsum">
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod magna ut ante iaculis egestas. Phasellus rutrum eget erat id malesuada. Etiam eget sagittis risus. Maecenas feugiat arcu et ipsum condimentum, sit amet dapibus metus ultricies. Phasellus non augue quam. Maecenas malesuada accumsan sollicitudin. Donec pulvinar, massa vitae elementum hendrerit, justo ex malesuada quam, vitae maximus tortor leo sit amet nibh. Sed cursus dui non magna posuere, id facilisis felis imperdiet. Nulla aliquam neque id sapien mattis molestie. Morbi ac sollicitudin nulla. Phasellus elit nisl, lobortis ac dignissim vel, aliquet vitae lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas in sem elementum, elementum risus at, cursus ante.
-</p>
-
-<p>
-Cras rhoncus risus dignissim ligula imperdiet molestie. Vivamus et odio fermentum diam blandit dictum. Aliquam purus nunc, condimentum ac libero efficitur, hendrerit ullamcorper tellus. In sed porta dui. Integer efficitur justo quis augue porta, eu aliquet nibh varius. Pellentesque sed dignissim enim. Aenean aliquet lacus tristique quam vulputate, ut tincidunt leo vestibulum. Sed arcu sem, consequat in libero a, porttitor aliquam est. Maecenas vitae diam id tortor aliquam elementum. Nullam nec justo sagittis, vulputate metus id, cursus eros. Aenean aliquet rutrum metus, vel congue justo egestas vel. Morbi egestas tellus sed velit porta tristique. Nullam aliquam turpis in tellus ultrices, vitae laoreet est ornare.
-</p>
+<div id="aboutClub" class="container-fluid">
+	<div class="text-center">
+		<h1 class="page-title"> The club </h1>
+	</div>
+	<div class="text-center">
+		<p class="text-center" id="clubText"> 
+			The Community Programming Undergraduate Society (CPUS) emphasizes business and community philanthropy. 
+			We develop volunteering programs with differing projects in an attempt to digitize Calgary’s business community so new market opportunities are available for the firms that choose to work with us.
+			Our volunteering projects include web design, database creation and maintenance, and general software needs that new businesses and non-for-profits may have. 
+			We are aware that students may have different programming abilities, and so, we host programming workshops for new coders so they can contribute to the projects they choose to sign up for.
+			We count on several skilled directors to guide small teams of members through programming volunteer projects.
+			The satisfaction of our business partners is essential, so our highly skilled directors are in charge of reviewing and aiding our coding teams to optimize results.
+			We are the only club on the University of Calgary campus focusing on educating and implementing these types of skills with volunteerism. 
+			Our focus is to help the community while teaching students valuable and applicable technical skills.
+			<br> If you are interested, please click below to sign up! 
+		</p>
+		<h2 class="text-center">
+			Sign Up Now 
+		</h2>
+	</div> 
+	<div class="text-center">
+		<div class="btn-group">
+		<a class="btn-lg btn-outline-dark" href="#signUp"> Sign Up </a>
+		</div>
+	</div>
 </div>
-<!-- ABOUT US -->>
 
+<!-- END ABOUT THE CLUB -->
 <!-- Our Volunteer-->
 
 <div id ="ourVolunteers">
@@ -391,111 +407,18 @@ Cras rhoncus risus dignissim ligula imperdiet molestie. Vivamus et odio fermentu
 
 <!-- END SIGN UP -->
 
+<!-- ABOUT US -->
+<center><h1>ABOUT US<h6/><center/>
 
-<!-- FEEDBACK BOX -->
-<style>
-body {font-family: Arial, Helvetica, sans-serif;  background-color: LightBlue;}
-* {box-sizing: border-box;}
+<div id="ipsum">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod magna ut ante iaculis egestas. Phasellus rutrum eget erat id malesuada. Etiam eget sagittis risus. Maecenas feugiat arcu et ipsum condimentum, sit amet dapibus metus ultricies. Phasellus non augue quam. Maecenas malesuada accumsan sollicitudin. Donec pulvinar, massa vitae elementum hendrerit, justo ex malesuada quam, vitae maximus tortor leo sit amet nibh. Sed cursus dui non magna posuere, id facilisis felis imperdiet. Nulla aliquam neque id sapien mattis molestie. Morbi ac sollicitudin nulla. Phasellus elit nisl, lobortis ac dignissim vel, aliquet vitae lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas in sem elementum, elementum risus at, cursus ante.
+</p>
 
-/* Full-width input fields */
-input[type=text]{
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the send button */
-.sendbtn {
-  padding: 14px 20px;
-  background-color: #4CAF50;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.send, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for send, signup button for small screens */
-@media screen and (max-width: 300px) {
-  .send, .signupbtn {
-     width: 100%;
-  }
-}
-</style>
-<body>
-
-
-<div class="container">
-
-      <h1>Feedback</h1>
-      <p>Please let us know what you think about Step-Forward!</p>
-      <hr>
-      
-       <label for="Name"><b>Name</b></label>
-       
-      <br />
-      
-      <input type="Name" placeholder="Name" name="Name" required>
-      
-      <br /> 
-      <br /> 
-      
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-      
-       <label for="feedback"><b>Feedback</b></label>
-       <input type="text" placeholder="Enter your feedback" name="feedback" required>
-    
-      <div class="clearfix">
-         <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-         <input type="submit" value="Send" class="sendbtn">
-      </div>
-      
-      
-  </form>
+<p>
+Cras rhoncus risus dignissim ligula imperdiet molestie. Vivamus et odio fermentum diam blandit dictum. Aliquam purus nunc, condimentum ac libero efficitur, hendrerit ullamcorper tellus. In sed porta dui. Integer efficitur justo quis augue porta, eu aliquet nibh varius. Pellentesque sed dignissim enim. Aenean aliquet lacus tristique quam vulputate, ut tincidunt leo vestibulum. Sed arcu sem, consequat in libero a, porttitor aliquam est. Maecenas vitae diam id tortor aliquam elementum. Nullam nec justo sagittis, vulputate metus id, cursus eros. Aenean aliquet rutrum metus, vel congue justo egestas vel. Morbi egestas tellus sed velit porta tristique. Nullam aliquam turpis in tellus ultrices, vitae laoreet est ornare.
+</p>
 </div>
-
-
-</body>
-
-<!-- FEEDBACK BOX -->
+<!-- ABOUT US -->
 
 </html>
