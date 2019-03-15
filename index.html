@@ -199,8 +199,62 @@ button {
 }
 
 
+#nav {
+  list-style-type: none;
+	z-index: 500
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background-color: #ffffff;
+  height: 100%; /* Full height */
+  z-index: 500;
+  position: fixed; /* Make it stick, even on scroll */
+
+}
+nav a{
+
+  display: block;
+  width: auto;
+	z-index: 700;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  text-align:center;
+}
+#navTitle {
+  font-size: 20px;
+  padding: 20px 0px 20px;
+}
+#facebook {
+  margin-top: 130%;
+}
 </style> 
 
+<!---Nav Bar-->
+<nav id="nav">
+  
+  <div> 
+    <center><h1 id = "navTitle"> TAKE A <BR> STEP FORWARD</h1></center>
+  </div>
+  <div id="navHome">
+    <a class="active" href="#main" id = "navHome">Home</a>
+    <a class="active" href="#ipsum" id = "navAboutUs">About Us</a>
+    <a class="active" href="#ourVolunteers" id = "navOurVolunteers">Our Volunteers</a>
+    <a class="active" href="#aboutUs" id = "navTeam">The Team</a>
+    <a class="active" href="#signUp" id = "navSignUp">Sign Up</a>
+    <a class="active" href="#feedback" id = "navFeedback">Feedback</a> 
+    <!---Change href for Sponsors and Calendar-->
+    <a class="active" href="#feedback" id = "navSponsors">Sponsors</a> 
+    <a class="active" href="#feedback" id = "navCalendar">Calendar</a> 
+
+    <a class ="link" href ="https://www.facebook.com/UofCStepForward/" id ="facebook">Facebook</a>
+    <a class="link" href ="https://www.instagram.com/ucstepforward/?hl=en" id ="instagram">Instagram</a> <br><br></div>
+
+  </div>
+
+</nav>
+<!--End Nav Bar-->
 
 <!--HOME PAGE-->
 <script src="form.js"></script>
