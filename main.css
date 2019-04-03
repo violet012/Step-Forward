@@ -1,0 +1,455 @@
+
+body {
+    font-family: 'Lato', sans-serif; 
+}
+
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+#clubText {
+    font-size: 16px;
+    padding: 0 2em 1em 2em;
+}
+
+ h2, h3, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h4 { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container-fluid {
+    height: 100%;
+    width: 100%;
+}
+
+.page-title {
+    color: black;
+    padding: 2em;
+    text-transform: uppercase;
+}
+
+td { 
+    padding-left: 20px; 
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+table { 
+    margin-left: auto; 
+    margin-right: auto;
+}
+#main {
+    position: relative;
+    padding-top: 100px;
+    background: url(assets/background.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#ourVolunteers{
+    background: whitesmoke no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    padding-top: 40px;
+}
+
+#volimg{ 
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#voltext { 
+    padding-top: 40px; 
+    margin: 0 60px;
+}
+
+#AboutClub {
+    background: #ABD5FB no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+#theTeam {
+    /* background: rgb(190, 190, 190) no-repeat center center fixed;
+    background: whitesmoke no-repeat center fixed; */
+    background: whitesmoke no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 200%;
+}
+
+#Sponsorships {
+    background: #ABD5FB no-repeat center fixed;
+}
+#title {
+    color: black;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle {
+    color: black;
+    opacity: 0.85;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+}
+
+#signUpForm {
+    background: whitesmoke no-repeat center fixed;
+    color: black;
+    width: 500px;
+    position: relative;
+}
+
+.column p { 
+    margin-top: 30px; 
+}
+
+#signUp {
+    background: whitesmoke;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 105%;
+}
+
+#FeedbackForm {
+    color: black;
+    width: 500px;
+    position: relative;
+}
+
+#feedback { 
+    background: #ABD5FB no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+color: black;
+margin-right: 20px;
+border-radius: .25rem;
+border: 1px solid;
+padding: .5rem 1rem;
+}
+
+.sidebar a { 
+    color: none;
+    margin-right: none;
+    border-radius: none;
+    border: none;
+    padding: none;
+}
+
+a:hover {
+color:grey;
+text-decoration: none;
+}
+
+button {
+background-color: transparent;
+margin-top: 30px !important;
+border: 1px solid;
+}
+
+.btn-group {
+margin-top: 40px;
+}
+
+.card-body {
+color: black;
+}
+
+.card {
+border-radius: 5% 5% 0 0;
+height: 760px;
+width: 285px;
+}
+
+.card-img-top {
+border-radius: 5% 5% 0 0;
+}
+
+.card img{ 
+    box-shadow: none;
+}
+
+img { 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#showcase {
+    background: whitesmoke;
+    background-size: cover;
+    position: relative;
+    height: 100%; /* can you make the height of the page relative to the stuff you put in?*/
+}
+
+#showcaseTitle{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50;
+
+}
+
+#ourVolunteers{ 
+    background: whitesmoke;
+    background-size: cover;
+    position: relative;
+    height: 100%; 
+}
+
+#showcaseImage{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.column{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    width: 200px
+}
+.column img {
+    display: block;
+    margin: 0 auto;
+}
+.row{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Nav Bar */ 
+
+.wrapper{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    width: 550px;
+    /* transform: translate(-50%,-50%); */
+}
+
+.navbar{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border: 5px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.navbar div{
+    height: 8px;
+    width: 40px;
+    background-color: #fff;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.navbar .first{
+    top: 5px;
+    left: 10px;
+    background-color:black;
+}
+
+.navbar .second{
+    top: 25px;
+    left: 10px;
+    background-color:black;
+}
+
+.navbar .third{
+    top: 45px;
+    left: 10px;
+    background-color:black;
+    z-index: 99;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+    
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+    
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+    
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+    
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+    
+.openbtn:hover {
+    background-color: #444;
+}
+          
+/* End nav bar*/ 
+
+#facebook {
+    margin-top: 130%;
+    }
+
+#calendar{
+    background-color: #ABD5FB;
+    /* background-size: cover; */
+    position: relative;
+
+}
+
+#calen{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    margin: 0 auto; 
+}
+
+
+.table{
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+#about {
+    background: #ABD5FB no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    padding-bottom: 20px
+}
+
+/* Sign Up */ 
+
+/* Full-width input fields */
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    }
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #ABD5FB;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the send button */
+.sendbtn {
+    padding: 14px 20px;
+    background-color: #ABD5FB;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.send, .btnStyle {
+    width: 50%;
+    margin: 0 auto; 
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for send button for small screens */
+@media screen and (max-width: 300px) {
+    .send, .btnStyle {
+        width: 100%;
+    }
+}
