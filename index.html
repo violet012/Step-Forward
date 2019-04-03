@@ -10,315 +10,40 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="script.js"></script>
 </head>
 
-<style>
-body {
-  font-family: 'Lato', sans-serif; background-color: #76A1CC;
-}
-
-
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
-#clubText {
-  font-size: 16px;
-  padding: 0 2em 1em 2em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
- }
-
-.container-fluid {
-  height: 100%;
-  width: 100%;
-}
-
-.page-title {
-  color: black;
-  padding: 2em;
-  text-transform: uppercase;
-}
-
-#main {
-  position: relative;
-  padding-top: 100px;
-  background: url(assets/background.jpg) no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#ourVolunteers{
-    background: #76A1CC no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-    height: 100%;
-}
-
-
-#AboutClub {
-  background: #ABD5FB no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  height: 100%;
-}
-
-#AboutUs {
-  /* background: rgb(190, 190, 190) no-repeat center center fixed;
-  background: whitesmoke no-repeat center fixed; */
-  background: #76A1CC no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  height: 200%;
-}
-
-#Sponsorships {
-    background: #ABD5FB no-repeat center fixed;
-}
-#title {
-  color: black;
-  font-size: 60px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.subtitle {
-  color: black;
-  opacity: 0.85;
-  font-family: 'Lato', sans-serif;
-  text-transform: capitalize;
-}
-
-#signUpForm {
-  background: #76A1CC no-repeat center fixed;
-  color: black;
-  width: 500px;
-  position: relative;
-  /*top: 50%;
-  transform: translateY(-50%);*/
-}
-
-#signUp {
-  background: #76A1CC no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  height: 110%;
-}
-
-#FeedbackForm {
-    background:  #76A1CC;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: black;
-    width: 500px;
-    position: relative;
-}
-
-/*
-  NO NAV BAR AS OF NOW
-
-.navbar-text {
-  color: black;
-}
-
-.navbar-brand {
-  color: black !important;
-  font-size: 24px;
-}
-*/
-
-a {
-  color: black;
-  margin-right: 20px;
-  border-radius: .25rem;
-  border: 1px solid;
-  padding: .5rem 1rem;
-}
-
-a:hover {
-  color:grey;
-  text-decoration: none;
-}
-
-button {
-  background-color: transparent;
-  margin-top: 30px !important;
-  border: 1px solid;
-}
-
-.btn-group {
-  margin-top: 40px;
-}
-
-.card-body {
-  color: black;
-}
-
-.card {
-  border-radius: 5% 5% 0 0;
-  height: 760px;
-  width: 285px;
-}
-
-.card-img-top {
-  border-radius: 5% 5% 0 0;
-}
-
-#showcase{
-    background: #ABD5FB
-    background-size: cover;
-    position: relative;
-    height: auto; /* can you make the height of the page relative to the stuff you put in?*/
-}
-
-#showcaseTitle{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 50;
-
-}
-
-#showcaseImage{
-    padding-top: 20px;
-    padding-left: 50px;
-
-
-
-}
-.column{
-    /*padding-right: auto;
-    padding-left: auto;*/
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    width: 200px
-}
-.column img {
-    display: block;
-    margin: 0 auto;
-}
-.row{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-#nav {
-  list-style-type: none;
-	z-index: 500
-  margin: 0;
-  padding: 0;
-  width: auto;
-  background-color: #ABD5FB;
-  height: 100%; /* Full height */
-  z-index: 500;
-  position: fixed; /* Make it stick, even on scroll */
-
-}
-nav a{
-
-  display: block;
-  width: auto;
-	z-index: 700;
-  color: #000000;
-  padding: 8px 16px;
-  text-decoration: none;
-  margin-bottom: 10px;
-  text-align:center;
-}
-#navTitle {
-  font-size: 20px;
-  padding: 20px 0px 20px;
-}
-#facebook {
-  margin-top: 130%;
-}
-
-#calendar{
-    background-color: #ABD5FB;
-    background-size: cover;
-    position: relative;
-    height: auto;
-}
-#calen{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.table{
-  padding-left: 10px;
-  padding-bottom: 20px;
-}
-#about {
-  /* background: rgb(190, 190, 190) no-repeat center center fixed;
-  background: whitesmoke no-repeat center fixed; */
-  background: #ABD5FB no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  height: auto;
-  padding-bottom: 20px
-}
-</style>
-
 <!---Nav Bar-->
-<nav id="nav">
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <a href="#main">HOME</a>
+  <a href="#about">PAST EVENTS</a>
+  <a href="#ourVolunteers">VOLUTNEERS</a>
+  <a href="#Sponsorships">SPONSORS</a>
+  <a href="#theTeam">THE TEAM</a>
+  <a href="#calendar">CALENDAR</a>
+  <a href="#signUp">SIGN UP</a>
+  <a href="#FeedbackForm">FEEDBACK</a>
+</div>
 
-  <div>
-    <center><h1 id = "navTitle"> TAKE A <BR> STEP FORWARD</h1></center>
-  </div>
-  <div id="navHome">
-    <a class="active" href="#main" id = "navHome">HOME</a>
-    <a class="active" href="#about" id = "navAboutUs">PAST EVENTS</a>
-    <a class="active" href="#ourVolunteers" id = "navOurVolunteers">VOLUTNEERS</a>
-    <a class="active" href="#Sponsorships" id = "navSponsors">SPONSORS</a>
-    <a class="active" href="#AboutUs" id = "navTeam">THE TEAM</a>
-    <a class="active" href="#calendar" id = "navCalendar">CALENDAR</a>
-    <a class="active" href="#signUp" id = "navSignUp">SIGN UP</a>
-    <a class="active" href="#FeedbackForm" id = "navFeedback">FEEDBACK</a>
-
-
-  </div>
-
-</nav>
 <!--End Nav Bar-->
 
 <!--HOME PAGE-->
-<script src="form.js"></script>
 <div class="container-fluid" id="main">
+  <div class="wrapper">
+      <div class="navbar" id="blah" onclick="openNav()">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+      </div>
+  </div>
+    
 	<h1 class="text-center" id="title">STEP FORWARD</h1>
 	<h1 class="text-center subtitle"> Volunteer Club</h1>
 	<div class="text-center">
 		<div class="btn-group text-center">
 			<a class="btn-lg btn-outline" href="#signUp">Sign Up</a>
-			<a class="btn-lg btn-outline" href="#about"> About The Team</a>
+			<a class="btn-lg btn-outline" href="#theTeam"> About The Team</a>
 			<a class="btn-lg btn-outline" href="#FeedbackForm"> Contact Us</a>
 			<!-- WHEN WE HAVE SOME <a class="btn-lg btn-outline" href="#"> Projects</a> -->
 		</div>
@@ -369,8 +94,7 @@ nav a{
 <!-- ABOUT US -->
 
 <div class="container-fluid text-center" id="about">
-    <center><h1>ABOUT US<h6/><center/>
-
+    <h1>ABOUT US</h1>
     <div id="ipsum">
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod magna ut ante iaculis egestas. Phasellus rutrum eget erat id malesuada. Etiam eget sagittis risus. Maecenas feugiat arcu et ipsum condimentum, sit amet dapibus metus ultricies. Phasellus non augue quam. Maecenas malesuada accumsan sollicitudin. Donec pulvinar, massa vitae elementum hendrerit, justo ex malesuada quam, vitae maximus tortor leo sit amet nibh. Sed cursus dui non magna posuere, id facilisis felis imperdiet. Nulla aliquam neque id sapien mattis molestie. Morbi ac sollicitudin nulla. Phasellus elit nisl, lobortis ac dignissim vel, aliquet vitae lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas in sem elementum, elementum risus at, cursus ante.
@@ -381,27 +105,25 @@ nav a{
         </p>
     </div>
 </div>
-<!-- ABOUT US -->>
+<!-- ABOUT US -->
 
 <!-- Our Volunteer-->
 
 <div id ="ourVolunteers">
-	<center>
-	<font size ="20"> <h2> OUR VOLUNTEERS</h2> 	</font>
-	<img src="assets/showcase/pic1.jpg" alt ="Step Forward Image" width = "644" height ="354" border ="5" style="border-radius: 5% 5% 5% 5%;">
-	<p>	<font size ="3"> Rhoncus conubia morbi accumsan cras varius malesuada curae; volutpat diam curae;. Platea dignissim aptent sollicitudin. Mauris non viverra dolor ac enim. Fermentum sociosqu erat venenatis senectus risus per mollis fusce mattis. Torquent nostra nulla ante a suscipit maecenas donec. Magnis vitae ante dui lorem montes? Nostra, quisque dis convallis non turpis. Dolor gravida nunc.
+	<h2> OUR VOLUNTEERS</h2>
+	<img src="assets/showcase/pic1.jpg" alt ="Step Forward Image" width = "644" height ="354" id="volimg" style="border-radius: 5% 5% 5% 5%;">
+	<p id="voltext">	 Rhoncus conubia morbi accumsan cras varius malesuada curae; volutpat diam curae;. Platea dignissim aptent sollicitudin. Mauris non viverra dolor ac enim. Fermentum sociosqu erat venenatis senectus risus per mollis fusce mattis. Torquent nostra nulla ante a suscipit maecenas donec. Magnis vitae ante dui lorem montes? Nostra, quisque dis convallis non turpis. Dolor gravida nunc.
 	Rhoncus conubia morbi accumsan cras varius malesuada curae; volutpat diam curae;. Platea dignissim aptent sollicitudin. Mauris non viverra dolor ac enim. Fermentum sociosqu erat venenatis senectus risus per mollis fusce mattis. Torquent nostra nulla ante a suscipit maecenas donec. Magnis vitae ante dui lorem montes? Nostra, quisque dis convallis non turpis. Dolor gravida nunc.
+  </p>
+</div>
 
-	</p> </font>
 
-
-	</center>
 <!--End of Our Volunteer-->
 
 <!-- Sponsorships-->
 
 <div id= "Sponsorships">
-	<center><h1>OUR SPONSORS</h1>
+	<h1>OUR SPONSORS</h1>
 		<table>
 			<tr>
 				<h4>Gold Sponsors</h4>
@@ -446,14 +168,14 @@ nav a{
 						<td><img src= "assets/showcase/pic1.jpg" alt= "Other Sponsor" width= "200px" height= "200px" style="border-radius: 5% 5% 5% 5%;"></td>
 				</tr>
     </table>
-  </center>
+  
 </div>
 
 <!-- End of Sponsorships-->
 
 <!-- ABOUT THE TEAM -->
 
-<div id="AboutUs" class="container-fluid">
+<div id="theTeam" class="container-fluid">
 	<div class="text-center">
 		<h1 class="page-title">THE TEAM</h1>
 	</div>
@@ -492,7 +214,7 @@ nav a{
 				</div>
 			</div>
 			<div class="col-3">
-				<div class="card shadow-lg p-3 mb-5 bg-white rounded">
+				<div class="card shadow p-3 mb-5 bg-white rounded">
 					<img class="card-img-top" src="assets/showcase/pic1.jpg" height = 250px width = 215px alt="Name" >
 					<div class="card-body">
 						<h4 class="card-title text-center"> Position </h4>
@@ -512,10 +234,7 @@ nav a{
 
 <div class="container-fluid" id="calendar">
 
-    <center><iframe id="calen" src="https://calendar.google.com/calendar/embed?src=guojessie863%40gmail.com&ctz=America%2FEdmonton" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe></center>
-    <!--
-<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDNtdDV2azc0czN0cnIwZWUycmZkNnQzNDcgZ3VvamVzc2llODYzQG0&amp;tmsrc=guojessie863%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
-    -->
+    <iframe id="calen" src="https://calendar.google.com/calendar/embed?src=guojessie863%40gmail.com&ctz=America%2FEdmonton" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 
 </div>
@@ -524,7 +243,6 @@ nav a{
 <!---END of CALENDAR (End of Jessie's edit)-->
 
 <!-- SIGN UP -->
-<script src="form.js"></script>
 <div class="container-fluid text-center" id="signUp">
 	<div class="text-center">
 		<form class="mx-auto" id="signUpForm">
@@ -545,7 +263,9 @@ nav a{
 				<input class="form-control" id="ucid" placeholder="UCID" required>
 			</div>
 
-			<button type="submit" class="btn-lg btn-outline-dark">Sign Up</button>
+			<div> 	
+			<button type="submit" class="btnStyle btn shadow btn-outline-dark">Sign Up</button>
+			</div>
 		</form>
 	</div>
 </div>
@@ -554,76 +274,8 @@ nav a{
 
 
 <!-- FEEDBACK BOX -->
-<style>
-
-/* Full-width input fields */
-input[type=text] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-    }
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-/* Set a style for all buttons */
-button {
-    background-color: #ABD5FB;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-button:hover {
-    opacity:1;
-}
-
-/* Extra styles for the send button */
-.sendbtn {
-    padding: 14px 20px;
-    background-color: #ABD5FB;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.send, .signupbtn {
-    float: left;
-    width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Change styles for send button for small screens */
-@media screen and (max-width: 300px) {
-    .send, .signupbtn {
-        width: 100%;
-    }
-}
-</style>
-
-<div class="container-fluid text-center" id="FeedbackForm">
-
-     <form class="mx-auto" id="signUpForm">
-
+<div class="container-fluid text-center" id="feedback">
+  <div id="FeedbackForm" class="mx-auto">
         <h1>FEEDBACK</h1>
         <p>Please let us know what you think about Step-Forward!</p>
         <hr>
@@ -641,23 +293,24 @@ button:hover {
             </div>
 
             <label for="feedback"><b>Feedback</b></label>
-            <br />
+            <br>
             <textarea type="text" rows="4" cols="50" placeholder="Enter your feedback." name = "Feedback" required>
             </textarea>
-            <br />
-            <br />
+            <br>
+            <br>
 
             <form action="mailto:someone@example.com?Subject=Step-Forward%20Feedback" method="post" enctype="text/plain">
             </form>
 
             <form action="mailto:someone@example.com?Subject=Step-Forward%20Feedback" method="post" enctype="text/plain">
 
-                <input type="submit" value="Send" class="btn-lg btn-outline-dark">
+                <input type="submit" value="Send" class="btnStyle btn shadow btn-outline-dark">
 
             </form>
             </form>
         </form>
     </div>
+</div>
 
 
 <!-- FEEDBACK BOX -->
