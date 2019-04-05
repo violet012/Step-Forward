@@ -3,7 +3,6 @@ body {
     font-family: 'Lato', sans-serif; 
 }
 
-
 html,body
 {
     width: 100%;
@@ -453,3 +452,13 @@ button:hover {
         width: 100%;
     }
 }
+
+
+/* this doesn't work..*/
+@media screen and (max-width : 600px){
+    #showcase{
+        width: 50%;
+        height: 50%;
+    }
+}
+
